@@ -1,0 +1,9 @@
+(executables
+ (names main)
+ (libraries bonsai.web)
+ (modes js)
+ (js_of_ocaml 
+   (flags :standard --no-sourcemap)
+   (link_flags :standard --no-sourcemap)
+   )
+ (preprocess (pps ppx_jane bonsai.ppx_bonsai)))

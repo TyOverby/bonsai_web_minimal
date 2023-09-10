@@ -1,0 +1,8 @@
+(library
+ (name bonsai_web_core)
+ (libraries bonsai core virtual_dom incr_dom.ui_incr core_kernel.moption)
+ (preprocess
+  (pps
+   ppx_jane
+   js_of_ocaml-ppx
+   bonsai.ppx_bonsai)))
